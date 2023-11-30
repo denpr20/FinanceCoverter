@@ -1,0 +1,1190 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AA4F93D2B1780C70095339B /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 8AA4F93C2B1780C70095339B /* AppsFlyerLib */; };
+		8AFF89072B0FD8B700A47237 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF89062B0FD8B700A47237 /* NotificationService.swift */; };
+		8AFF890B2B0FD8B700A47237 /* FinanceAppNotificationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8AFF89042B0FD8B700A47237 /* FinanceAppNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8AFF89122B0FD96900A47237 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 8AFF89112B0FD96900A47237 /* OneSignalExtension */; };
+		8AFF89142B0FD96900A47237 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 8AFF89132B0FD96900A47237 /* OneSignalFramework */; };
+		8AFF89162B0FD96900A47237 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 8AFF89152B0FD96900A47237 /* OneSignalInAppMessages */; };
+		8AFF89182B0FD96900A47237 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 8AFF89172B0FD96900A47237 /* OneSignalLocation */; };
+		8AFF891B2B0FD97900A47237 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 8AFF891A2B0FD97900A47237 /* OneSignalExtension */; };
+		8AFF891D2B0FD97900A47237 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 8AFF891C2B0FD97900A47237 /* OneSignalFramework */; };
+		8AFF891F2B0FD97F00A47237 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 8AFF891E2B0FD97F00A47237 /* OneSignalInAppMessages */; };
+		8AFF89212B0FD97F00A47237 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 8AFF89202B0FD97F00A47237 /* OneSignalLocation */; };
+		EBB587EC2AF3A695008E1987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB587EB2AF3A695008E1987 /* AppDelegate.swift */; };
+		EBB587EE2AF3A695008E1987 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB587ED2AF3A695008E1987 /* SceneDelegate.swift */; };
+		EBB587F02AF3A695008E1987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB587EF2AF3A695008E1987 /* ViewController.swift */; };
+		EBB587F62AF3A695008E1987 /* FinanceTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBB587F42AF3A695008E1987 /* FinanceTestApp.xcdatamodeld */; };
+		EBB587F82AF3A697008E1987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB587F72AF3A697008E1987 /* Assets.xcassets */; };
+		EBB587FB2AF3A697008E1987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB587F92AF3A697008E1987 /* LaunchScreen.storyboard */; };
+		EBB588062AF3A697008E1987 /* FinanceTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588052AF3A697008E1987 /* FinanceTestAppTests.swift */; };
+		EBB588102AF3A697008E1987 /* FinanceTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5880F2AF3A697008E1987 /* FinanceTestAppUITests.swift */; };
+		EBB588122AF3A697008E1987 /* FinanceTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588112AF3A697008E1987 /* FinanceTestAppUITestsLaunchTests.swift */; };
+		EBB5881F2AF3A766008E1987 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5881E2AF3A766008E1987 /* OnboardingViewController.swift */; };
+		EBB588222AF3A785008E1987 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBB588212AF3A785008E1987 /* SnapKit */; };
+		EBB588272AF3A7A9008E1987 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588262AF3A7A9008E1987 /* OnboardingViewModel.swift */; };
+		EBB588292AF3A7B1008E1987 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588282AF3A7B1008E1987 /* OnboardingRouter.swift */; };
+		EBB5882C2AF3A80C008E1987 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5882B2AF3A80C008E1987 /* TabBarController.swift */; };
+		EBB5882E2AF3A814008E1987 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5882D2AF3A814008E1987 /* TabBarRouter.swift */; };
+		EBB588302AF3A9B2008E1987 /* BaseColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5882F2AF3A9B2008E1987 /* BaseColors.swift */; };
+		EBB588332AF3A9D7008E1987 /* CurrencyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588322AF3A9D7008E1987 /* CurrencyEntity.swift */; };
+		EBB588352AF3AB02008E1987 /* CurrencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588342AF3AB02008E1987 /* CurrencyCollectionViewCell.swift */; };
+		EBB588372AF3AD50008E1987 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588362AF3AD50008E1987 /* CalculatorViewController.swift */; };
+		EBB5883B2AF3AD69008E1987 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5883A2AF3AD69008E1987 /* SettingsViewController.swift */; };
+		EBB5883D2AF3AD83008E1987 /* SettingsRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5883C2AF3AD83008E1987 /* SettingsRowModel.swift */; };
+		EBB5883F2AF3ADC3008E1987 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5883E2AF3ADC3008E1987 /* SettingsRouter.swift */; };
+		EBB588412AF3ADDB008E1987 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588402AF3ADDB008E1987 /* SettingsViewModel.swift */; };
+		EBB588432AF3AEAD008E1987 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588422AF3AEAD008E1987 /* SettingsTableViewCell.swift */; };
+		EBB5884C2AF3B026008E1987 /* AveriaLibre-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBB588452AF3B025008E1987 /* AveriaLibre-BoldItalic.ttf */; };
+		EBB5884D2AF3B026008E1987 /* AveriaLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBB588462AF3B025008E1987 /* AveriaLibre-Regular.ttf */; };
+		EBB5884E2AF3B026008E1987 /* AveriaLibre-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBB588472AF3B025008E1987 /* AveriaLibre-LightItalic.ttf */; };
+		EBB5884F2AF3B026008E1987 /* AveriaLibre-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBB588482AF3B025008E1987 /* AveriaLibre-Italic.ttf */; };
+		EBB588502AF3B026008E1987 /* AveriaLibre-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBB588492AF3B025008E1987 /* AveriaLibre-Light.ttf */; };
+		EBB588512AF3B026008E1987 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = EBB5884A2AF3B025008E1987 /* OFL.txt */; };
+		EBB588522AF3B026008E1987 /* AveriaLibre-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBB5884B2AF3B025008E1987 /* AveriaLibre-Bold.ttf */; };
+		EBB588572AF3B1E8008E1987 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBB588562AF3B1E8008E1987 /* DeviceKit */; };
+		EBB588592AF3B237008E1987 /* CalculatorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588582AF3B237008E1987 /* CalculatorModule.swift */; };
+		EBB5885B2AF3B2C6008E1987 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5885A2AF3B2C6008E1987 /* CalculatorViewModel.swift */; };
+		EBB5885D2AF3D75D008E1987 /* ChangeCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5885C2AF3D75D008E1987 /* ChangeCountryViewController.swift */; };
+		EBB5885F2AF3D81B008E1987 /* ChangeCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5885E2AF3D81B008E1987 /* ChangeCountryTableViewCell.swift */; };
+		EBB588612AF3E626008E1987 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588602AF3E626008E1987 /* ContactUsViewController.swift */; };
+		EBB588632AF3E65E008E1987 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588622AF3E65E008E1987 /* CustomTextField.swift */; };
+		EBB588662AF51F2E008E1987 /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588642AF51F2E008E1987 /* Country+CoreDataClass.swift */; };
+		EBB588672AF51F2E008E1987 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588652AF51F2E008E1987 /* Country+CoreDataProperties.swift */; };
+		EBB588692AF51FBA008E1987 /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588682AF51FBA008E1987 /* PersistanceService.swift */; };
+		EBB5886B2AF51FFC008E1987 /* CountryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5886A2AF51FFC008E1987 /* CountryEntity.swift */; };
+		EBB5886D2AF95C30008E1987 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5886C2AF95C30008E1987 /* NetworkingService.swift */; };
+		EBB588702AF96AEC008E1987 /* ExchangeRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5886F2AF96AEC008E1987 /* ExchangeRateResponse.swift */; };
+		EBB588722AFAC19D008E1987 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588712AFAC19D008E1987 /* KeychainService.swift */; };
+		EBB588752AFADD30008E1987 /* Response+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588732AFADD2F008E1987 /* Response+CoreDataClass.swift */; };
+		EBB588762AFADD30008E1987 /* Response+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB588742AFADD30008E1987 /* Response+CoreDataProperties.swift */; };
+		EBB588862AFCDD8B008E1987 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EBB588852AFCDD8B008E1987 /* FirebaseAnalytics */; };
+		EBB588882AFCDD8B008E1987 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EBB588872AFCDD8B008E1987 /* FirebaseDatabase */; };
+		EBB5888A2AFCDD8B008E1987 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EBB588892AFCDD8B008E1987 /* FirebaseDatabaseSwift */; };
+		EBB5888C2AFCDD8C008E1987 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = EBB5888B2AFCDD8C008E1987 /* FirebaseRemoteConfig */; };
+		EBB5888E2AFCDD8C008E1987 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EBB5888D2AFCDD8C008E1987 /* FirebaseRemoteConfigSwift */; };
+		EBB588902AFCDEA6008E1987 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBB5888F2AFCDEA5008E1987 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AFF89092B0FD8B700A47237 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBB587E02AF3A695008E1987 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AFF89032B0FD8B700A47237;
+			remoteInfo = FinanceAppNotificationExtension;
+		};
+		EBB588022AF3A697008E1987 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBB587E02AF3A695008E1987 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBB587E72AF3A695008E1987;
+			remoteInfo = FinanceTestApp;
+		};
+		EBB5880C2AF3A697008E1987 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBB587E02AF3A695008E1987 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBB587E72AF3A695008E1987;
+			remoteInfo = FinanceTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8AFF890F2B0FD8B700A47237 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8AFF890B2B0FD8B700A47237 /* FinanceAppNotificationExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8AFF88FF2B0FD87100A47237 /* FinanceTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinanceTestApp.entitlements; sourceTree = "<group>"; };
+		8AFF89042B0FD8B700A47237 /* FinanceAppNotificationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinanceAppNotificationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFF89062B0FD8B700A47237 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		8AFF89082B0FD8B700A47237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB587E82AF3A695008E1987 /* FinanceTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB587EB2AF3A695008E1987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBB587ED2AF3A695008E1987 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBB587EF2AF3A695008E1987 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBB587F52AF3A695008E1987 /* FinanceTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinanceTestApp.xcdatamodel; sourceTree = "<group>"; };
+		EBB587F72AF3A697008E1987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBB587FA2AF3A697008E1987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBB587FC2AF3A697008E1987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB588012AF3A697008E1987 /* FinanceTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB588052AF3A697008E1987 /* FinanceTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTestAppTests.swift; sourceTree = "<group>"; };
+		EBB5880B2AF3A697008E1987 /* FinanceTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB5880F2AF3A697008E1987 /* FinanceTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTestAppUITests.swift; sourceTree = "<group>"; };
+		EBB588112AF3A697008E1987 /* FinanceTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBB5881E2AF3A766008E1987 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		EBB588262AF3A7A9008E1987 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		EBB588282AF3A7B1008E1987 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		EBB5882B2AF3A80C008E1987 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EBB5882D2AF3A814008E1987 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		EBB5882F2AF3A9B2008E1987 /* BaseColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseColors.swift; sourceTree = "<group>"; };
+		EBB588322AF3A9D7008E1987 /* CurrencyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyEntity.swift; sourceTree = "<group>"; };
+		EBB588342AF3AB02008E1987 /* CurrencyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionViewCell.swift; sourceTree = "<group>"; };
+		EBB588362AF3AD50008E1987 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		EBB5883A2AF3AD69008E1987 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EBB5883C2AF3AD83008E1987 /* SettingsRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowModel.swift; sourceTree = "<group>"; };
+		EBB5883E2AF3ADC3008E1987 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		EBB588402AF3ADDB008E1987 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		EBB588422AF3AEAD008E1987 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		EBB588452AF3B025008E1987 /* AveriaLibre-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaLibre-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EBB588462AF3B025008E1987 /* AveriaLibre-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaLibre-Regular.ttf"; sourceTree = "<group>"; };
+		EBB588472AF3B025008E1987 /* AveriaLibre-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaLibre-LightItalic.ttf"; sourceTree = "<group>"; };
+		EBB588482AF3B025008E1987 /* AveriaLibre-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaLibre-Italic.ttf"; sourceTree = "<group>"; };
+		EBB588492AF3B025008E1987 /* AveriaLibre-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaLibre-Light.ttf"; sourceTree = "<group>"; };
+		EBB5884A2AF3B025008E1987 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		EBB5884B2AF3B025008E1987 /* AveriaLibre-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaLibre-Bold.ttf"; sourceTree = "<group>"; };
+		EBB588582AF3B237008E1987 /* CalculatorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModule.swift; sourceTree = "<group>"; };
+		EBB5885A2AF3B2C6008E1987 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		EBB5885C2AF3D75D008E1987 /* ChangeCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCountryViewController.swift; sourceTree = "<group>"; };
+		EBB5885E2AF3D81B008E1987 /* ChangeCountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCountryTableViewCell.swift; sourceTree = "<group>"; };
+		EBB588602AF3E626008E1987 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		EBB588622AF3E65E008E1987 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EBB588642AF51F2E008E1987 /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Country+CoreDataClass.swift"; path = "FinanceTestApp/Country+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EBB588652AF51F2E008E1987 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Country+CoreDataProperties.swift"; path = "FinanceTestApp/Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EBB588682AF51FBA008E1987 /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
+		EBB5886A2AF51FFC008E1987 /* CountryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryEntity.swift; sourceTree = "<group>"; };
+		EBB5886C2AF95C30008E1987 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		EBB5886E2AF967AC008E1987 /* Currencies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Currencies.json; sourceTree = "<group>"; };
+		EBB5886F2AF96AEC008E1987 /* ExchangeRateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateResponse.swift; sourceTree = "<group>"; };
+		EBB588712AFAC19D008E1987 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		EBB588732AFADD2F008E1987 /* Response+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Response+CoreDataClass.swift"; path = "FinanceTestApp/Response+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EBB588742AFADD30008E1987 /* Response+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Response+CoreDataProperties.swift"; path = "FinanceTestApp/Response+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EBB5888F2AFCDEA5008E1987 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AFF89012B0FD8B700A47237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFF891F2B0FD97F00A47237 /* OneSignalInAppMessages in Frameworks */,
+				8AFF891D2B0FD97900A47237 /* OneSignalFramework in Frameworks */,
+				8AFF89212B0FD97F00A47237 /* OneSignalLocation in Frameworks */,
+				8AFF891B2B0FD97900A47237 /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB587E52AF3A695008E1987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFF89162B0FD96900A47237 /* OneSignalInAppMessages in Frameworks */,
+				EBB5888A2AFCDD8B008E1987 /* FirebaseDatabaseSwift in Frameworks */,
+				EBB588222AF3A785008E1987 /* SnapKit in Frameworks */,
+				EBB588572AF3B1E8008E1987 /* DeviceKit in Frameworks */,
+				8AFF89182B0FD96900A47237 /* OneSignalLocation in Frameworks */,
+				8AA4F93D2B1780C70095339B /* AppsFlyerLib in Frameworks */,
+				EBB5888E2AFCDD8C008E1987 /* FirebaseRemoteConfigSwift in Frameworks */,
+				EBB5888C2AFCDD8C008E1987 /* FirebaseRemoteConfig in Frameworks */,
+				EBB588882AFCDD8B008E1987 /* FirebaseDatabase in Frameworks */,
+				EBB588862AFCDD8B008E1987 /* FirebaseAnalytics in Frameworks */,
+				8AFF89142B0FD96900A47237 /* OneSignalFramework in Frameworks */,
+				8AFF89122B0FD96900A47237 /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB587FE2AF3A697008E1987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB588082AF3A697008E1987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AFF89052B0FD8B700A47237 /* FinanceAppNotificationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8AFF89062B0FD8B700A47237 /* NotificationService.swift */,
+				8AFF89082B0FD8B700A47237 /* Info.plist */,
+			);
+			path = FinanceAppNotificationExtension;
+			sourceTree = "<group>";
+		};
+		8AFF89192B0FD97900A47237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBB587DF2AF3A695008E1987 = {
+			isa = PBXGroup;
+			children = (
+				EBB588732AFADD2F008E1987 /* Response+CoreDataClass.swift */,
+				EBB588742AFADD30008E1987 /* Response+CoreDataProperties.swift */,
+				EBB588642AF51F2E008E1987 /* Country+CoreDataClass.swift */,
+				EBB588652AF51F2E008E1987 /* Country+CoreDataProperties.swift */,
+				EBB587EA2AF3A695008E1987 /* FinanceTestApp */,
+				EBB588042AF3A697008E1987 /* FinanceTestAppTests */,
+				EBB5880E2AF3A697008E1987 /* FinanceTestAppUITests */,
+				8AFF89052B0FD8B700A47237 /* FinanceAppNotificationExtension */,
+				EBB587E92AF3A695008E1987 /* Products */,
+				8AFF89192B0FD97900A47237 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBB587E92AF3A695008E1987 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBB587E82AF3A695008E1987 /* FinanceTestApp.app */,
+				EBB588012AF3A697008E1987 /* FinanceTestAppTests.xctest */,
+				EBB5880B2AF3A697008E1987 /* FinanceTestAppUITests.xctest */,
+				8AFF89042B0FD8B700A47237 /* FinanceAppNotificationExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBB587EA2AF3A695008E1987 /* FinanceTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				8AFF88FF2B0FD87100A47237 /* FinanceTestApp.entitlements */,
+				EBB5888F2AFCDEA5008E1987 /* GoogleService-Info.plist */,
+				EBB588262AF3A7A9008E1987 /* OnboardingViewModel.swift */,
+				EBB588462AF3B025008E1987 /* AveriaLibre-Regular.ttf */,
+				EBB588442AF3B025008E1987 /* Averia_Libre */,
+				EBB588392AF3AD5B008E1987 /* Settings */,
+				EBB588382AF3AD54008E1987 /* Calculator */,
+				EBB588312AF3A9C4008E1987 /* Models */,
+				EBB5882A2AF3A801008E1987 /* TabBar */,
+				EBB588252AF3A796008E1987 /* Onboarding */,
+				EBB587EB2AF3A695008E1987 /* AppDelegate.swift */,
+				EBB587ED2AF3A695008E1987 /* SceneDelegate.swift */,
+				EBB587EF2AF3A695008E1987 /* ViewController.swift */,
+				EBB587F72AF3A697008E1987 /* Assets.xcassets */,
+				EBB587F92AF3A697008E1987 /* LaunchScreen.storyboard */,
+				EBB587FC2AF3A697008E1987 /* Info.plist */,
+				EBB587F42AF3A695008E1987 /* FinanceTestApp.xcdatamodeld */,
+				EBB5882F2AF3A9B2008E1987 /* BaseColors.swift */,
+				EBB5885C2AF3D75D008E1987 /* ChangeCountryViewController.swift */,
+				EBB5885E2AF3D81B008E1987 /* ChangeCountryTableViewCell.swift */,
+				EBB588622AF3E65E008E1987 /* CustomTextField.swift */,
+				EBB588682AF51FBA008E1987 /* PersistanceService.swift */,
+				EBB5886A2AF51FFC008E1987 /* CountryEntity.swift */,
+				EBB5886C2AF95C30008E1987 /* NetworkingService.swift */,
+				EBB5886E2AF967AC008E1987 /* Currencies.json */,
+				EBB588712AFAC19D008E1987 /* KeychainService.swift */,
+			);
+			path = FinanceTestApp;
+			sourceTree = "<group>";
+		};
+		EBB588042AF3A697008E1987 /* FinanceTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBB588052AF3A697008E1987 /* FinanceTestAppTests.swift */,
+			);
+			path = FinanceTestAppTests;
+			sourceTree = "<group>";
+		};
+		EBB5880E2AF3A697008E1987 /* FinanceTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5880F2AF3A697008E1987 /* FinanceTestAppUITests.swift */,
+				EBB588112AF3A697008E1987 /* FinanceTestAppUITestsLaunchTests.swift */,
+			);
+			path = FinanceTestAppUITests;
+			sourceTree = "<group>";
+		};
+		EBB588252AF3A796008E1987 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5881E2AF3A766008E1987 /* OnboardingViewController.swift */,
+				EBB588282AF3A7B1008E1987 /* OnboardingRouter.swift */,
+				EBB588342AF3AB02008E1987 /* CurrencyCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EBB5882A2AF3A801008E1987 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5882B2AF3A80C008E1987 /* TabBarController.swift */,
+				EBB5882D2AF3A814008E1987 /* TabBarRouter.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EBB588312AF3A9C4008E1987 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5886F2AF96AEC008E1987 /* ExchangeRateResponse.swift */,
+				EBB588322AF3A9D7008E1987 /* CurrencyEntity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBB588382AF3AD54008E1987 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				EBB588362AF3AD50008E1987 /* CalculatorViewController.swift */,
+				EBB588582AF3B237008E1987 /* CalculatorModule.swift */,
+				EBB5885A2AF3B2C6008E1987 /* CalculatorViewModel.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		EBB588392AF3AD5B008E1987 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EBB5883A2AF3AD69008E1987 /* SettingsViewController.swift */,
+				EBB5883C2AF3AD83008E1987 /* SettingsRowModel.swift */,
+				EBB5883E2AF3ADC3008E1987 /* SettingsRouter.swift */,
+				EBB588402AF3ADDB008E1987 /* SettingsViewModel.swift */,
+				EBB588422AF3AEAD008E1987 /* SettingsTableViewCell.swift */,
+				EBB588602AF3E626008E1987 /* ContactUsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EBB588442AF3B025008E1987 /* Averia_Libre */ = {
+			isa = PBXGroup;
+			children = (
+				EBB588452AF3B025008E1987 /* AveriaLibre-BoldItalic.ttf */,
+				EBB588472AF3B025008E1987 /* AveriaLibre-LightItalic.ttf */,
+				EBB588482AF3B025008E1987 /* AveriaLibre-Italic.ttf */,
+				EBB588492AF3B025008E1987 /* AveriaLibre-Light.ttf */,
+				EBB5884A2AF3B025008E1987 /* OFL.txt */,
+				EBB5884B2AF3B025008E1987 /* AveriaLibre-Bold.ttf */,
+			);
+			path = Averia_Libre;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AFF89032B0FD8B700A47237 /* FinanceAppNotificationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFF890C2B0FD8B700A47237 /* Build configuration list for PBXNativeTarget "FinanceAppNotificationExtension" */;
+			buildPhases = (
+				8AFF89002B0FD8B700A47237 /* Sources */,
+				8AFF89012B0FD8B700A47237 /* Frameworks */,
+				8AFF89022B0FD8B700A47237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinanceAppNotificationExtension;
+			packageProductDependencies = (
+				8AFF891A2B0FD97900A47237 /* OneSignalExtension */,
+				8AFF891C2B0FD97900A47237 /* OneSignalFramework */,
+				8AFF891E2B0FD97F00A47237 /* OneSignalInAppMessages */,
+				8AFF89202B0FD97F00A47237 /* OneSignalLocation */,
+			);
+			productName = FinanceAppNotificationExtension;
+			productReference = 8AFF89042B0FD8B700A47237 /* FinanceAppNotificationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EBB587E72AF3A695008E1987 /* FinanceTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB588152AF3A697008E1987 /* Build configuration list for PBXNativeTarget "FinanceTestApp" */;
+			buildPhases = (
+				EBB587E42AF3A695008E1987 /* Sources */,
+				EBB587E52AF3A695008E1987 /* Frameworks */,
+				EBB587E62AF3A695008E1987 /* Resources */,
+				8AFF890F2B0FD8B700A47237 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AFF890A2B0FD8B700A47237 /* PBXTargetDependency */,
+			);
+			name = FinanceTestApp;
+			packageProductDependencies = (
+				EBB588212AF3A785008E1987 /* SnapKit */,
+				EBB588562AF3B1E8008E1987 /* DeviceKit */,
+				EBB588852AFCDD8B008E1987 /* FirebaseAnalytics */,
+				EBB588872AFCDD8B008E1987 /* FirebaseDatabase */,
+				EBB588892AFCDD8B008E1987 /* FirebaseDatabaseSwift */,
+				EBB5888B2AFCDD8C008E1987 /* FirebaseRemoteConfig */,
+				EBB5888D2AFCDD8C008E1987 /* FirebaseRemoteConfigSwift */,
+				8AFF89112B0FD96900A47237 /* OneSignalExtension */,
+				8AFF89132B0FD96900A47237 /* OneSignalFramework */,
+				8AFF89152B0FD96900A47237 /* OneSignalInAppMessages */,
+				8AFF89172B0FD96900A47237 /* OneSignalLocation */,
+				8AA4F93C2B1780C70095339B /* AppsFlyerLib */,
+			);
+			productName = FinanceTestApp;
+			productReference = EBB587E82AF3A695008E1987 /* FinanceTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBB588002AF3A697008E1987 /* FinanceTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB588182AF3A697008E1987 /* Build configuration list for PBXNativeTarget "FinanceTestAppTests" */;
+			buildPhases = (
+				EBB587FD2AF3A697008E1987 /* Sources */,
+				EBB587FE2AF3A697008E1987 /* Frameworks */,
+				EBB587FF2AF3A697008E1987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBB588032AF3A697008E1987 /* PBXTargetDependency */,
+			);
+			name = FinanceTestAppTests;
+			productName = FinanceTestAppTests;
+			productReference = EBB588012AF3A697008E1987 /* FinanceTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBB5880A2AF3A697008E1987 /* FinanceTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB5881B2AF3A697008E1987 /* Build configuration list for PBXNativeTarget "FinanceTestAppUITests" */;
+			buildPhases = (
+				EBB588072AF3A697008E1987 /* Sources */,
+				EBB588082AF3A697008E1987 /* Frameworks */,
+				EBB588092AF3A697008E1987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBB5880D2AF3A697008E1987 /* PBXTargetDependency */,
+			);
+			name = FinanceTestAppUITests;
+			productName = FinanceTestAppUITests;
+			productReference = EBB5880B2AF3A697008E1987 /* FinanceTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBB587E02AF3A695008E1987 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8AFF89032B0FD8B700A47237 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					EBB587E72AF3A695008E1987 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					EBB588002AF3A697008E1987 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EBB587E72AF3A695008E1987;
+					};
+					EBB5880A2AF3A697008E1987 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EBB587E72AF3A695008E1987;
+					};
+				};
+			};
+			buildConfigurationList = EBB587E32AF3A695008E1987 /* Build configuration list for PBXProject "FinanceTestApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBB587DF2AF3A695008E1987;
+			packageReferences = (
+				EBB588202AF3A785008E1987 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				EBB588552AF3B1E8008E1987 /* XCRemoteSwiftPackageReference "DeviceKit" */,
+				EBB588842AFCDD8B008E1987 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8AFF89102B0FD96900A47237 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				8AA4F93B2B1780C70095339B /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
+			productRefGroup = EBB587E92AF3A695008E1987 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBB587E72AF3A695008E1987 /* FinanceTestApp */,
+				EBB588002AF3A697008E1987 /* FinanceTestAppTests */,
+				EBB5880A2AF3A697008E1987 /* FinanceTestAppUITests */,
+				8AFF89032B0FD8B700A47237 /* FinanceAppNotificationExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AFF89022B0FD8B700A47237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB587E62AF3A695008E1987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB5884D2AF3B026008E1987 /* AveriaLibre-Regular.ttf in Resources */,
+				EBB5884E2AF3B026008E1987 /* AveriaLibre-LightItalic.ttf in Resources */,
+				EBB587FB2AF3A697008E1987 /* LaunchScreen.storyboard in Resources */,
+				EBB5884F2AF3B026008E1987 /* AveriaLibre-Italic.ttf in Resources */,
+				EBB587F82AF3A697008E1987 /* Assets.xcassets in Resources */,
+				EBB588502AF3B026008E1987 /* AveriaLibre-Light.ttf in Resources */,
+				EBB588522AF3B026008E1987 /* AveriaLibre-Bold.ttf in Resources */,
+				EBB588512AF3B026008E1987 /* OFL.txt in Resources */,
+				EBB588902AFCDEA6008E1987 /* GoogleService-Info.plist in Resources */,
+				EBB5884C2AF3B026008E1987 /* AveriaLibre-BoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB587FF2AF3A697008E1987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB588092AF3A697008E1987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AFF89002B0FD8B700A47237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFF89072B0FD8B700A47237 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB587E42AF3A695008E1987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB588762AFADD30008E1987 /* Response+CoreDataProperties.swift in Sources */,
+				EBB588752AFADD30008E1987 /* Response+CoreDataClass.swift in Sources */,
+				EBB588592AF3B237008E1987 /* CalculatorModule.swift in Sources */,
+				EBB5883D2AF3AD83008E1987 /* SettingsRowModel.swift in Sources */,
+				EBB5883F2AF3ADC3008E1987 /* SettingsRouter.swift in Sources */,
+				EBB5885F2AF3D81B008E1987 /* ChangeCountryTableViewCell.swift in Sources */,
+				EBB588692AF51FBA008E1987 /* PersistanceService.swift in Sources */,
+				EBB588432AF3AEAD008E1987 /* SettingsTableViewCell.swift in Sources */,
+				EBB588662AF51F2E008E1987 /* Country+CoreDataClass.swift in Sources */,
+				EBB587F62AF3A695008E1987 /* FinanceTestApp.xcdatamodeld in Sources */,
+				EBB588672AF51F2E008E1987 /* Country+CoreDataProperties.swift in Sources */,
+				EBB5882C2AF3A80C008E1987 /* TabBarController.swift in Sources */,
+				EBB5885B2AF3B2C6008E1987 /* CalculatorViewModel.swift in Sources */,
+				EBB5886B2AF51FFC008E1987 /* CountryEntity.swift in Sources */,
+				EBB588722AFAC19D008E1987 /* KeychainService.swift in Sources */,
+				EBB588632AF3E65E008E1987 /* CustomTextField.swift in Sources */,
+				EBB588302AF3A9B2008E1987 /* BaseColors.swift in Sources */,
+				EBB5886D2AF95C30008E1987 /* NetworkingService.swift in Sources */,
+				EBB5885D2AF3D75D008E1987 /* ChangeCountryViewController.swift in Sources */,
+				EBB588612AF3E626008E1987 /* ContactUsViewController.swift in Sources */,
+				EBB5882E2AF3A814008E1987 /* TabBarRouter.swift in Sources */,
+				EBB588272AF3A7A9008E1987 /* OnboardingViewModel.swift in Sources */,
+				EBB587F02AF3A695008E1987 /* ViewController.swift in Sources */,
+				EBB588702AF96AEC008E1987 /* ExchangeRateResponse.swift in Sources */,
+				EBB588412AF3ADDB008E1987 /* SettingsViewModel.swift in Sources */,
+				EBB588352AF3AB02008E1987 /* CurrencyCollectionViewCell.swift in Sources */,
+				EBB588292AF3A7B1008E1987 /* OnboardingRouter.swift in Sources */,
+				EBB5881F2AF3A766008E1987 /* OnboardingViewController.swift in Sources */,
+				EBB5883B2AF3AD69008E1987 /* SettingsViewController.swift in Sources */,
+				EBB587EC2AF3A695008E1987 /* AppDelegate.swift in Sources */,
+				EBB588372AF3AD50008E1987 /* CalculatorViewController.swift in Sources */,
+				EBB587EE2AF3A695008E1987 /* SceneDelegate.swift in Sources */,
+				EBB588332AF3A9D7008E1987 /* CurrencyEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB587FD2AF3A697008E1987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB588062AF3A697008E1987 /* FinanceTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB588072AF3A697008E1987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB588102AF3A697008E1987 /* FinanceTestAppUITests.swift in Sources */,
+				EBB588122AF3A697008E1987 /* FinanceTestAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AFF890A2B0FD8B700A47237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AFF89032B0FD8B700A47237 /* FinanceAppNotificationExtension */;
+			targetProxy = 8AFF89092B0FD8B700A47237 /* PBXContainerItemProxy */;
+		};
+		EBB588032AF3A697008E1987 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBB587E72AF3A695008E1987 /* FinanceTestApp */;
+			targetProxy = EBB588022AF3A697008E1987 /* PBXContainerItemProxy */;
+		};
+		EBB5880D2AF3A697008E1987 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBB587E72AF3A695008E1987 /* FinanceTestApp */;
+			targetProxy = EBB5880C2AF3A697008E1987 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBB587F92AF3A697008E1987 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBB587FA2AF3A697008E1987 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AFF890D2B0FD8B700A47237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QUMRKRMZJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinanceAppNotificationExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FinanceAppNotificationExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exchanger.currency.app.FinanceAppNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8AFF890E2B0FD8B700A47237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QUMRKRMZJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinanceAppNotificationExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FinanceAppNotificationExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exchanger.currency.app.FinanceAppNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EBB588132AF3A697008E1987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBB588142AF3A697008E1987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBB588162AF3A697008E1987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinanceTestApp/FinanceTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QUMRKRMZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinanceTestApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Конверт валют и курсы валют";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Геолокация требуется для более точного определения курса валют";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your data will be used for a better experience of using the app, analythics and personalized ads.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exchanger.currency.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EBB588172AF3A697008E1987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FinanceTestApp/FinanceTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QUMRKRMZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FinanceTestApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Конверт валют и курсы валют";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Геолокация требуется для более точного определения курса валют";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your data will be used for a better experience of using the app, analythics and personalized ads.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exchanger.currency.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EBB588192AF3A697008E1987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66CYB5Z4ZH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FinanceTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinanceTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FinanceTestApp";
+			};
+			name = Debug;
+		};
+		EBB5881A2AF3A697008E1987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66CYB5Z4ZH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FinanceTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinanceTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FinanceTestApp";
+			};
+			name = Release;
+		};
+		EBB5881C2AF3A697008E1987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66CYB5Z4ZH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FinanceTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinanceTestApp;
+			};
+			name = Debug;
+		};
+		EBB5881D2AF3A697008E1987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66CYB5Z4ZH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FinanceTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinanceTestApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AFF890C2B0FD8B700A47237 /* Build configuration list for PBXNativeTarget "FinanceAppNotificationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFF890D2B0FD8B700A47237 /* Debug */,
+				8AFF890E2B0FD8B700A47237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB587E32AF3A695008E1987 /* Build configuration list for PBXProject "FinanceTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB588132AF3A697008E1987 /* Debug */,
+				EBB588142AF3A697008E1987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB588152AF3A697008E1987 /* Build configuration list for PBXNativeTarget "FinanceTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB588162AF3A697008E1987 /* Debug */,
+				EBB588172AF3A697008E1987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB588182AF3A697008E1987 /* Build configuration list for PBXNativeTarget "FinanceTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB588192AF3A697008E1987 /* Debug */,
+				EBB5881A2AF3A697008E1987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB5881B2AF3A697008E1987 /* Build configuration list for PBXNativeTarget "FinanceTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB5881C2AF3A697008E1987 /* Debug */,
+				EBB5881D2AF3A697008E1987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8AA4F93B2B1780C70095339B /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.12.2;
+			};
+		};
+		8AFF89102B0FD96900A47237 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.4;
+			};
+		};
+		EBB588202AF3A785008E1987 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		EBB588552AF3B1E8008E1987 /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		EBB588842AFCDD8B008E1987 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8AA4F93C2B1780C70095339B /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AA4F93B2B1780C70095339B /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		8AFF89112B0FD96900A47237 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AFF89102B0FD96900A47237 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+		8AFF89132B0FD96900A47237 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AFF89102B0FD96900A47237 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+		8AFF89152B0FD96900A47237 /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AFF89102B0FD96900A47237 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalInAppMessages;
+		};
+		8AFF89172B0FD96900A47237 /* OneSignalLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AFF89102B0FD96900A47237 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalLocation;
+		};
+		8AFF891A2B0FD97900A47237 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AFF89102B0FD96900A47237 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+		8AFF891C2B0FD97900A47237 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AFF89102B0FD96900A47237 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+		8AFF891E2B0FD97F00A47237 /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AFF89102B0FD96900A47237 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalInAppMessages;
+		};
+		8AFF89202B0FD97F00A47237 /* OneSignalLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AFF89102B0FD96900A47237 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalLocation;
+		};
+		EBB588212AF3A785008E1987 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB588202AF3A785008E1987 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		EBB588562AF3B1E8008E1987 /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB588552AF3B1E8008E1987 /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+		EBB588852AFCDD8B008E1987 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB588842AFCDD8B008E1987 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		EBB588872AFCDD8B008E1987 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB588842AFCDD8B008E1987 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		EBB588892AFCDD8B008E1987 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB588842AFCDD8B008E1987 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		EBB5888B2AFCDD8C008E1987 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB588842AFCDD8B008E1987 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		EBB5888D2AFCDD8C008E1987 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB588842AFCDD8B008E1987 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		EBB587F42AF3A695008E1987 /* FinanceTestApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBB587F52AF3A695008E1987 /* FinanceTestApp.xcdatamodel */,
+			);
+			currentVersion = EBB587F52AF3A695008E1987 /* FinanceTestApp.xcdatamodel */;
+			path = FinanceTestApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EBB587E02AF3A695008E1987 /* Project object */;
+}
